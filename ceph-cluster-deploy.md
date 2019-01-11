@@ -4,7 +4,7 @@
 ### 服务器节点准备
 
  hostname | role | os |
- -- | -- | -- | --|
+ -- | -- | -- |
  ceph-osd-n16 | OSD | CentOS 7.4 x86_64 |
  ceph-osd-n17 | OSD |  - |
  ceph-osd-n18 | OSD | - |
