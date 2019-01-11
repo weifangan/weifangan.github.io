@@ -3,14 +3,15 @@
 
 ### 服务器节点准备
 
-| hostname | role | os |
-| ceph-osd-n16 | OSD | CentOS 7.4 x86_64 |
-| ceph-osd-n17 | OSD |  - |
-| ceph-osd-n18 | OSD | - |
-| ceph-mon-n14 | MON | - |
-| ceph-mon-n21 | MON | - |
-| ceph-mds-n19 | MDS | - |
-| ceph-mds-n20 | MDS | - |
+ hostname | role | os |
+ -- | -- | -- | --|
+ ceph-osd-n16 | OSD | CentOS 7.4 x86_64 |
+ ceph-osd-n17 | OSD |  - |
+ ceph-osd-n18 | OSD | - |
+ ceph-mon-n14 | MON | - |
+ ceph-mon-n21 | MON | - |
+ ceph-mds-n19 | MDS | - |
+ ceph-mds-n20 | MDS | - |
 
 ### 安装ceph-deploy
 ```bash
