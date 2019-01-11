@@ -87,7 +87,7 @@ ceph-deploy forgetkeys
 **客户端操作**
 ```sh
 yum install ceph-common
-mount -t ceph 10.2.0.38:6789:/ /d -o name=admin,secret=AQBd8rlaAHwEDRAAE1+tBB92FylzSPHEb3erGg==
+mount -t ceph <MON_IP>:6789:/ /d -o name=admin,secret=<SECRET>
 ```
 
 ### ceph.conf
