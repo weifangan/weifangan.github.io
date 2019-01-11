@@ -75,23 +75,7 @@ ceph osd pool create cephfs_data 64
 ceph osd pool create cephfs_metadata 64
 ceph fs new cephfs cephfs_metadata cephfs_data
 ```
-### ceph-deploy
 
-```
-ceph-deploy new ceph-master ceph-node1 ceph-node2
-ceph-deploy install ceph-master ceph-node1 ceph-node2
-ceph-deploy mon create-initial
-ceph-deploy osd prepare ceph-master:/dev/vdb2 ceph-node1:/dev/vdb2 ceph-node2:/dev/vdb2 
-ceph-deploy osd activate ceph-master:/dev/vdb2 ceph-node1:/dev/vdb2 ceph-node2:/dev/vdb2
-ceph-deploy admin ceph-master ceph-node1 ceph-node2
-ceph-deploy admichmod +r /etc/ceph/ceph.client.admin.keyringn
-ceph-deploy mds create ceph-node1 ceph-node2
-
-ceph osd pool create cephfs_data 10
-ceph osd pool create cephfs_metadata 10
-ceph fs new cephfs cephfs_metadata cephfs_data
-
-```
 **如果出问题**
 
 ```
