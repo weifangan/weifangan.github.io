@@ -14,6 +14,7 @@
  ceph-mds-n20 | MDS | - |
 
 ### 安装ceph-deploy
+**部署节点服务器 ceph-mds-n19,在部署服务器上安装ceph-deploy**
 ```bash
 [root@ceph-mds-n19] yum install -y ceph-deploy
 ```
@@ -25,6 +26,22 @@
 export CEPH_DEPLOY_REPO_URL=http://mirrors.163.com/ceph/rpm-jewel/el7
 export CEPH_DEPLOY_GPG_URL=http://mirrors.163.com/ceph/keys/release.asc
 ```
+**将ip与hostname映射写入部署节点的/etc/hosts**
+
+> 172.16.1.14 ceph-mon-n14
+>
+> 172.16.1.16 ceph-osd-n16
+>
+> 172.16.1.17 ceph-osd-n17
+>
+> 172.16.1.18 ceph-osd-n18
+>
+> 172.16.1.19 ceph-mds-n19
+>
+> 172.16.1.20 ceph-mds-n20
+>
+> 172.16.1.21 ceph-mon-n21
+>
 ### 在每个节点安装ceph
 ```bash
 #use ceph-deploy install {ceph-node1} {ceph-node2} ...
