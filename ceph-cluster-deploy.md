@@ -110,9 +110,9 @@ mount -t ceph 10.2.0.38:6789:/ /d -o name=admin,secret=AQBd8rlaAHwEDRAAE1+tBB92F
 
 ```conf
 [global]
-fsid = b69ba88c-b53d-4f59-9284-5006c23948cb
-mon_initial_members = ceph-master, ceph-node1, ceph-node2
-mon_host = 10.154.9.122,10.154.19.13,10.133.196.252
+fsid = b69ba88c-b53d-4f59-9284-9006c23966ac
+mon_initial_members = ceph-mon-n14, ceph-mon-n21, ceph-mds-n19
+mon_host = 172.16.1.14,172.16.1.21,172.16.1.19
 auth_cluster_required = cephx
 auth_service_required = cephx
 auth_client_required = cephx
@@ -122,8 +122,8 @@ osd pool default size = 3
 osd pool default min size = 2
 osd pool default pg num = 128
 osd pool default pgp num = 128 
-public network = 10.0.0.1/8 
-cluster network = 10.0.0.1/8
+public network = 172.16.0.1/8 
+cluster network = 172.16.0.1/8
 max open files = 131072 
 
 
